@@ -20,10 +20,11 @@ while True:
 
     cv.imshow('Video Window', frame) #window name and what should display
 
-    if cv.waitKey(0) & 0xFF == ord('q'):
+    if cv.waitKey(1) & 0xFF == ord('q'):
         break
 
-    # as we know waitKey() refers how long window will be displayed and
+
+    # as we know waitKey() refers how long window will be displayed 1 means continue
     # 0xFF == ord('q') refers if q press from the keyboard then break from the while loop
 
 #after that we should need to release the capture and destroy all the window what cv took
